@@ -42,8 +42,6 @@ var flipCard = function() { //defining flipcard function, removed cardID as no l
   this.setAttribute('src', cards[cardId].cardImage);
   if (cardsInPlay.length === 2) { //check whether two cards are in play
     checkForMatch(); //call checkformatch function
-    cardsInPlay = []; //empty for next try
-
   }
 };
 
@@ -57,17 +55,8 @@ var createBoard = function() { //this function will create a new gameboard
 
 //added click even to each card so that when each card is clicked, the flipcard
 //function will run
-
     }
 }
 
+//game starts first instance
 createBoard(); //invoking the function to create the board!
-
-
-
-
-//console.log should show : user flipped queen, user flipped king, sorry, try again
-
-//when user clicks on a card, the image with the face of the card should be displayed.
-//If the user has selected two cards, an alert should pop up letting the User
-//know if the two cards match
